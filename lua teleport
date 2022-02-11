@@ -1,0 +1,9 @@
+# Lua Teleport
+for all,_ in pairs (tfm.get.room.playerList) do
+system.bindMouse(all, true)
+end
+
+function eventMouse(playerName, x, y)
+tfm.exec.movePlayer(playerName, x, y);
+end
+
